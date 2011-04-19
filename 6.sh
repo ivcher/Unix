@@ -24,5 +24,5 @@ do
 			new_md5=1
 		fi
 	echo "	"
-	fi
+	fi  
 done
