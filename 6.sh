@@ -11,13 +11,12 @@ do
 	else
 		if [ -n "$tmp" ] 
 		then	
-			if ! grep "$md5_size $tmp" $base_file 
+			if ! grep -q "$md5_size $tmp" $base_file 
 			then
-				echo "$md5_size $tmp"
+				echo "$md5_size $tmp"	#"$md5_size $tmp"
 			fi
 		else
 			new_md5=1
 		fi
-	echo "	"
 	fi
 done
