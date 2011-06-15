@@ -39,7 +39,7 @@ do
 			new_md5=1
 		fi
 	fi
-done < <(cat $test_file)	# Если cat $test_file|while read tmp1 tmp2 то в массиве key ключи не сохраняются после выхода из цикла while.
+done < <(cat $test_file)	# if "$test_file|while read tmp1 tmp2" then array keys ne budet dopolnyatsyz kluchami is cicla while
 
 cat $base_file|while read md5 size name
 do
